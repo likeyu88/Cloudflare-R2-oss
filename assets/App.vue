@@ -457,8 +457,8 @@ export default {
           window.history.pushState(null, "", url.toString());
         }
         document.title = `${
-          this.cwd.replace(/.*\/(?!$)|\//g, "") || "/"
-        } - 李可喻`;
+          this.cwd.replace(/.*\/(?!$)|\//g, "") || ""
+        }  李可喻的网盘`;
       },
       immediate: true,
     },
