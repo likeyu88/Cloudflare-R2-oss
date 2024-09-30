@@ -458,7 +458,7 @@ export default {
         }
         document.title = `${
           this.cwd.replace(/.*\/(?!$)|\//g, "") || "/"
-        } - 文件库`;
+        } - 李可喻`;
       },
       immediate: true,
     },
