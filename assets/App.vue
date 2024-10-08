@@ -61,7 +61,7 @@
               alt="Folder"
             />
           </div>
-          <span class="file-name">..</span>
+          <span class="file-name">返回上一级</span>
         </div>
       </li>
       <li v-for="folder in filteredFolders" :key="folder">
