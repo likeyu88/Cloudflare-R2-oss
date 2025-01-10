@@ -58,8 +58,7 @@ input[type="search"] {
   height: 64px;
   padding: 8px 0;
   transition: background-color 0.2s ease-in-out;
-  display: block; /* 或者使用 display: inline-block */
-  width: 100%; /* 确保占据整行宽度 */
+  display: flex;
   align-items: center;
   cursor: pointer;
   user-select: none;
