@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-  background-image: url('https://d8dced7c.cloudflare-leeky-tuchuang.pages.dev/file/AgACAgUAAyEGAASRyWISAAMsZ4KwEYY6XvKxnEpoHz6hDX6qh-oAAvO_MRssIBlU_TV6uf1aJbQBAAMCAAN5AAM2BA.png');
+  background-image: url('https://d8dced7c.cloudflare-leeky-tuchuang.pages.dev/file/AgACAgUAAyEGAASRyWISAAMtZ4K6CTCj7hVLWA0regIQWWDhyZMAAvq_MRssIBlUyTLlekr30fgBAAMCAAN4AAM2BA.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -16,14 +16,14 @@ body {
 }
 
 #app {
-  width: 90%;
+  width: 80%;
   height: auto; /* 根据内容自动调整高度 */
   margin: 0 auto; /* 水平居中 */
-  border: 3px solid rgba(0, 0, 0, 0.5); /* 黑色边框，透明度 50% */
+  border: 3px solid rgba(0, 225, 0, 0.5); /* 绿色边框，透明度 50% */
   border-radius: 10px; /* 圆角边框 */
   box-sizing: border-box; /* 包含边框和内边距在宽度内 */
   /* 上内边距 10%，右内边距 5%，下内边距 10%，左内边距 5% */
-  padding: 10% 5% 10% 5%;
+  padding: 3% 3% 3% 3%;
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted",
