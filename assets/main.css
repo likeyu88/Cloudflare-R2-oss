@@ -4,13 +4,15 @@
 
 html, body {
   height: 100%;
-  width: 100%;
   margin: 0;
-  padding: 0;
+}
+
+body {
   background-image: url('https://d8dced7c.cloudflare-leeky-tuchuang.pages.dev/file/AgACAgUAAyEGAASRyWISAAMsZ4KwEYY6XvKxnEpoHz6hDX6qh-oAAvO_MRssIBlU_TV6uf1aJbQBAAMCAAN5AAM2BA.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
 }
 
 #app {
