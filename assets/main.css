@@ -1,159 +1,232 @@
+/* 将所有元素的盒模型设置为 border-box，使元素的宽度和高度包含边框和内边距 */
 * {
   box-sizing: border-box;
 }
 
+/* 设置 html 和 body 的高度为 100%，并移除外边距，为后续元素的布局做准备 */
 html, body {
   height: 100%;
   margin: 0;
 }
 
+/* 设置 body 的背景图片，并控制其显示方式 */
 body {
+  /* 背景图片的 URL */
   background-image: url('https://d8dced7c.cloudflare-leeky-tuchuang.pages.dev/file/AgACAgUAAyEGAASRyWISAAMtZ4K6CTCj7hVLWA0regIQWWDhyZMAAvq_MRssIBlUyTLlekr30fgBAAMCAAN4AAM2BA.jpg');
+  /* 让背景图片覆盖整个元素，可能会裁剪图片 */
   background-size: cover;
+  /* 防止背景图片重复显示 */
   background-repeat: no-repeat;
+  /* 将背景图片居中显示 */
   background-position: center;
+  /* 固定背景图片，使其不随页面滚动而滚动 */
   background-attachment: fixed;
 }
 
+/* 针对 id 为 app 的元素的样式 */
 #app {
+  /* 宽度为父元素的 80% */
   width: 80%;
-  height: auto; /* 根据内容自动调整高度 */
-  margin: 0 auto; /* 水平居中 */
-  border: 3px solid rgba(0, 225, 0, 0.5); /* 绿色边框，透明度 50% */
-  border-radius: 20px; /* 圆角边框 */
-  box-sizing: border-box; /* 包含边框和内边距在宽度内 */
-  /* 上内边距 10%，右内边距 5%，下内边距 10%，左内边距 5% */
+  /* 高度根据内容自动调整 */
+  height: auto;
+  /* 水平居中 */
+  margin: 0 auto;
+  /* 3 像素宽的半透明绿色边框 */
+  border: 3px solid rgba(0, 225, 0, 0.5);
+  /* 20 像素的圆角 */
+  border-radius: 20px;
+  /* 盒模型为 border-box */
+  box-sizing: border-box;
+  /* 上、右、下、左的内边距分别为 3% */
   padding: 3% 3% 3% 3%;
 }
+
+/* 设置 body 的字体样式，并移除外边距 */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted",
     "Segoe UI", "Liberation Sans", sans-serif;
   margin: 0;
 }
 
+/* 隐藏没有 data-v-app 属性的 app 元素 */
 /* Hide the app until it's ready */
 #app:not([data-v-app]) {
   display: none;
 }
 
+/* 对 ul 元素进行样式设置 */
 ul {
+  /* 移除列表的默认标记 */
+  list-style: none;的默认标记 */
   list-style: none;
+  /* 左内边距为 0 */
   padding-left: 0;
+  /* 外边距为 0 */
   margin: 0;
 }
 
+/* 对类名为 file-list 的元素进行布局设置 */
 .file-list {
+  /* 使用 Flex 布局 */
   display: flex;
+  /* 允许元素换行 */
   flex-wrap: wrap;
-  flex-direction: column
+  /* 主轴方向为垂直方向 */
+  flex-direction: column;
 }
 
+/* 对 file-list 的直接子元素 li 进行样式设置 */
 .file-list > li {
+  /* 宽度为父元素的 100% */
   width: 100%;
 }
 
+/* 当屏幕宽度小于等于 768px 时，对 file-list 的直接子元素 li 的样式设置 */
 @media only screen and (max-width: 768px) {
-  .file-list > li {
+ .file-list > li {
     width: 100%;
   }
 }
 
+/* 对 a 元素的样式设置，去除下划线并继承父元素的颜色 */
 a {
   text-decoration: none;
   color: inherit;
 }
 
+/* 对 input 元素中类型为 search 的样式设置 */
 input[type="search"] {
+  /* 背景颜色为浅灰色 */
   background-color: whitesmoke;
+  /* 无边框 */
   border: none;
+  /* 边框圆角为 16 像素 */
   border-radius: 16px;
+  /* 宽度为 100% */
   width: 100%;
+  /* 内边距，上下 8 像素，左右 12 像素 */
   padding: 8px 12px;
 }
 
+/* 对 file-item 类元素的样式设置 */
 .file-item {
+  /* 高度为 64 像素 */
   height: 64px;
+  /* 上下内边距为 8 像素，左右内边距为 0 */
   padding: 8px 0;
+  /* 背景颜色的过渡效果 */
   transition: background-color 0.2s ease-in-out;
+  /* 使用 Flex 布局并垂直居中 */
   display: flex;
   align-items: center;
+  /* 鼠标指针样式为手型 */
   cursor: pointer;
+  /* 禁止用户选中元素 */
   user-select: none;
 }
 
 
+/* 当鼠标悬停在 file-item 元素上时的背景颜色变化 */
 .file-item:hover {
   background-color: #f5f5f5;
 }
 
+/* 对 file-item 的直接子元素 div 的样式设置 */
 .file-item > div {
+  /* 最小宽度为 0，允许元素收缩 */
   min-width: 0;
 }
 
+/* 对 file-icon 类元素的样式设置 */
 .file-icon {
+  /* 宽度和高度为 48 像素 */
   width: 48px;
   height: 48px;
+  /* 不允许元素收缩 */
   flex-shrink: 0;
+  /* 使用 Flex 布局并垂直和水平居中 */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* 对 file-name 和 contextmenu-filename 类元素的样式设置 */
 .file-name,
 .contextmenu-filename {
+  /* 文本不换行 */
   white-space: nowrap;
+  /* 文本超出部分用省略号表示 */
   text-overflow: ellipsis;
+  /* 超出部分隐藏 */
   overflow: hidden;
 }
 
+/* 对 file-attr 类元素的样式设置 */
 .file-attr {
+  /* 上外边距为 4 像素 */
   margin-top: 4px;
+  /* 文本颜色为深灰色 */
   color: dimgray;
+  /* 字体大小为 0.8em */
   font-size: 0.8em;
 }
 
+/* 对 file-attr 类元素内的 span 元素，相邻元素的左边距为 8 像素 */
 .file-attr > span + span {
   margin-left: 8px;
 }
 
+/* 对 progress 元素的样式设置，定位在页面底部，宽度为 100% */
 progress {
   position: fixed;
   bottom: 0;
   width: 100%;
 }
 
+/* 对 button 元素中类名为 circle 的样式设置，设置为圆形按钮 */
 button.circle {
   border-radius: 50%;
 }
 
+/* 对 upload-button 和 create-folder-button 类元素的样式设置 */
 .upload-button,
 .create-folder-button {
+  /* 固定定位 */
   position: fixed;
+  /* 宽度和高度为 48 像素 */
   width: 48px;
   height: 48px;
+  /* 使用 Flex 布局并垂直和水平居中 */
   display: flex;
   align-items: center;
   justify-content: center;
+  /* 背景颜色为橙色 */
   background-color: rgb(243, 128, 32);
+  /* 鼠标指针样式为手型 */
   cursor: pointer;
+  /* 添加阴影效果 */
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
+/* 对 upload-button 元素的定位设置 */
 .upload-button {
   right: 16px;
   bottom: 16px;
 }
 
+/* 对 create-folder-button 元素的定位设置 */
 .create-folder-button {
   right: 16px;
   bottom: 80px;
 }
 
+/* 对 contextmenu-filename 类元素的样式设置 */
 .contextmenu-filename {
   padding: 12px;
   min-width: 256px;
 }
 
+/* 对 contextmenu-list 的直接子元素 li 下的子元素的样式设置 */
 .contextmenu-list > li > * {
   display: block;
   width: 100%;
@@ -163,10 +236,12 @@ button.circle {
   font-size: inherit;
 }
 
+/* 当鼠标悬停在 contextmenu-list 的直接子元素 li 下的子元素上时的背景颜色变化 */
 .contextmenu-list > li > *:hover {
   background-color: whitesmoke;
 }
 
+/* 对 button 元素的样式设置 */
 button {
   background: none;
   border: none;
@@ -174,29 +249,35 @@ button {
   padding: 0;
 }
 
+/* 对 fade-enter-active 和 fade-leave-active 类元素的过渡效果设置，控制透明度变化 */
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.2s ease;
 }
 
+/* 对 fade-enter-from 和 fade-leave-to 类元素的初始和结束状态的不透明度设置 */
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
 }
 
+/* 对 fade-enter-to 和 fade-leave-from 类元素的不透明度设置 */
 .fade-enter-to,
 .fade-leave-from {
   opacity: 1;
 }
 
+/* 对 slide-up-enter-active 类元素的过渡效果设置，控制元素向上滑动的过渡 */
 .slide-up-enter-active {
   transition: transform 0.2s ease-out;
 }
 
+/* 对 slide-up-leave-active 类元素的过渡效果设置，控制元素向下滑动的过渡 */
 .slide-up-leave-active {
   transition: transform 0.2s ease-in;
 }
 
+/* 对 slide-up-enter-from 和 slide-up-leave-to 类元素的初始和结束状态的位置设置 */
 .slide-up-enter-from,
 .slide-up-leave-to {
   transform: translateY(100%);
