@@ -10,6 +10,9 @@ html, body {
   display: grid;
   grid-template-rows: 1fr auto;
   min-height: 100vh; /* 容器最小高度为视口高度 */
+  max-width: 100%;
+  min-width: 100%;
+  
 }
 
 /* 设置 body 的背景图片，并控制其显示方式 */
