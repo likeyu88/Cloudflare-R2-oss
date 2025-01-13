@@ -285,3 +285,27 @@ button {
 .slide-up-leave-to {
   transform: translateY(100%);
 }
+/* 下面是页脚 */
+#footer {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  border: 3px solid rgba(0, 0, 0, 0); /* 将边框颜色改为透明 */
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 2%;
+  bottom: 0;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.8); /* 将背景改为白色且透明度为 80% */
+}
+
+.icp-icon {
+  width: 180px;
+  height: 30px;
+}
+
+#footer div {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
