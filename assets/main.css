@@ -1,6 +1,6 @@
 /* 将所有元素的盒模型设置为 border-box，使元素的宽度和高度包含边框和内边距 */
 * {
-  box-sizing: border-box;margin-top: 10px; margin-bottom: 10px;
+  box-sizing: border-box;
 }
 
 /* 设置 html 和 body 的高度为 100%，并移除外边距，为后续元素的布局做准备 */
