@@ -2,6 +2,10 @@
 * {
   box-sizing: border-box;margin: 10px 0;
 }
+div {
+  margin-top: 10px; /* 设置 div 元素的上外边距为 10 像素 */
+  margin-bottom: 10px; /* 设置 div 元素的下外边距为 10 像素 */
+}
 
 /* 设置 html 和 body 的高度为 100%，并移除外边距，为后续元素的布局做准备 */
 html, body {
