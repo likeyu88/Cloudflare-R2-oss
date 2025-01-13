@@ -7,6 +7,9 @@
 html, body {
   height: 100%;
   margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh; /* 容器最小高度为视口高度 */
 }
 
 /* 设置 body 的背景图片，并控制其显示方式 */
@@ -282,8 +285,3 @@ button {
 .slide-up-leave-to {
   transform: translateY(100%);
 }
-.container {
-      display: grid;
-      grid-template-rows: 1fr auto;
-      min-height: 100vh; /* 容器最小高度为视口高度 */
-    }
