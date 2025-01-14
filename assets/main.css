@@ -113,10 +113,6 @@ input[type="search"] {
 
 /* 对 file-item 类元素的样式设置 */
 .file-item {
-  /* 高度为 64 像素 */
-  height: 64px;
-  /* 上下内边距为 8 像素，左右内边距为 0 */
-  padding: 8px 0;
   /* 背景颜色的过渡效果 */
   transition: background-color 0.2s ease-in-out;
   /* 使用 Flex 布局并垂直居中 */
@@ -131,7 +127,7 @@ input[type="search"] {
 
 /* 当鼠标悬停在 file-item 元素上时的背景颜色变化 */
 .file-item:hover {
-  background-color: #f5f5f5;
+  background-color: #00008B;
 }
 
 /* 对 file-item 的直接子元素 div 的样式设置 */
