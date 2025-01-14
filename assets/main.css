@@ -46,9 +46,15 @@ body {
 
 /* 设置 body 的字体样式，并移除外边距 */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted",
-    "Segoe UI", "Liberation Sans", sans-serif;
-  margin: 4px;
+    font - family: 'CustomFont', -apple - system, BlinkMacSystemFont, "Segoe UI Adjusted",
+        "Segoe UI", "Liberation Sans", sans - serif;
+}
+@font - face {
+    font - family: 'CustomFont';
+    src: url('http://example.com/yourfont.woff2') format('woff2'),
+         url('http://example.com/yourfont.woff') format('woff');
+    font - weight: normal;
+    font - style: normal;
 }
 
 /* 隐藏没有 data-v-app 属性的 app 元素 */
