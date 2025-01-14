@@ -35,7 +35,7 @@ body {
   /* 水平居中 */
   margin: 0 auto;
   /* 3 像素宽的半透明绿色边框 */
-  border: 3px solid blue;
+  border: 3px solid #00FFFF;
   /* 20 像素的圆角 */
   border-radius: 20px;
   /* 盒模型为 border-box */
@@ -43,6 +43,7 @@ body {
   /* 上、右、下、左的内边距分别为 3% */
   padding: 3% 3% 3% 3%;
   background-color : rgba(135, 206, 250, 0.2)
+  color: #00FFFF;
 }
 
 /* 设置 body 的字体样式，并移除外边距 */
