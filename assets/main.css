@@ -42,6 +42,7 @@ body {
   box-sizing: border-box;
   /* 上、右、下、左的内边距分别为 3% */
   padding: 3% 3% 3% 3%;
+  background-color : rgba(135, 206, 250, 0.2)
 }
 
 /* 设置 body 的字体样式，并移除外边距 */
@@ -133,7 +134,7 @@ input[type="search"] {
 
 /* 当鼠标悬停在 file-item 元素上时的背景颜色变化 */
 .file-item:hover {
-  background-color: #00008B;
+  background-color: #f5f5f5;
 }
 
 /* 对 file-item 的直接子元素 div 的样式设置 */
