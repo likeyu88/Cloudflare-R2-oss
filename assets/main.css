@@ -35,7 +35,7 @@ body {
   /* 水平居中 */
   margin: 0 auto;
   /* 3 像素宽的半透明绿色边框 */
-  border: 3px solid rgba(0, 225, 0, 0.5);
+  border: 3px solid blue;
   /* 20 像素的圆角 */
   border-radius: 20px;
   /* 盒模型为 border-box */
