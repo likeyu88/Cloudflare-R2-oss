@@ -13,6 +13,8 @@
     <link rel="manifest" href="/assets/manifest.json">
     <link rel="icon" type="image/png" href="/assets/favicon.png">
     <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-webfont@1.1.0/lxgwwenkai-regular.css" />
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.min.js"></script>
+    
 </head>
 <body>
     <div id="header" style="width: 80%;height: auto;margin: 0 auto;border: 3px solid rgba(0, 225, 0, 0.5);border-radius: 20px;box-sizing: border-box;padding: 2% 2% 2% 2%;">
@@ -60,6 +62,34 @@
     </script>
 
     <script src="script.js"></script>
+
+    <input type="text" id="searchInput" placeholder="输入关键词搜索">
+    <ul id="searchResults"></ul>
+    <script>
+    const data = [
+      { id: 1, title: '苹果手机', description: '一款受欢迎的智能手机' },
+      { id: 2, title: '华为电脑', description: '性能出色的电脑' }
+    ];
+
+    const fuse = new Fuse(data, {
+      keys: ['title', 'description']
+    });
+
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+
+    searchInput.addEventListener('input', function() {
+      const keyword = searchInput.value;
+      const results = fuse.search(keyword);
+      searchResults.innerHTML = '';
+
+      results.forEach(function(result) {
+        const li = document.createElement('li');
+        li.textContent = result.item.title + ': ' + result.item.description;
+        searchResults.appendChild(li);
+      });
+    });
+    </script>
     
     <div id="xixix" style="width: 80%;height: auto;margin: 0 auto;border: 3px solid rgba(0, 225, 0, 0.5);border-radius: 20px;box-sizing: border-box;padding: 2% 2% 2% 2%;">
     <h1 style="margin-bottom:0;">测试</h1></div>
