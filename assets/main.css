@@ -302,8 +302,36 @@ button {
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.4); /* 将背景改为白色且透明度为 80% */
 }
+.hidden {
+  display: none;
+}
 
-.icp-icon {
+.highlight {
+  background-color: yellow;
+}
+
+/* 设置搜索容器的样式 */
+#searchContainer {
+  display: flex; /* 使用 flex 布局 */
+  justify-content: space-between; /* 将头像和搜索框分别置于左右两端 */
+  align-items: center; /* 垂直居中元素 */
+  margin-bottom: 10px; /* 底部添加一些边距 */
+}
+
+/* 设置头像的样式 */
+#avatar {
+  width: 30px; /* 头像宽度 */
+  height: 30px; /* 头像高度 */
+  border-radius: 50%; /* 头像圆形处理 */
+}
+
+/* 设置搜索框的样式 */
+#searchBox {
+  height: 30px; /* 搜索框高度 */
+  padding: 5px; /* 内边距 */
+  border: 1px solid #ccc; /* 边框 */
+  border-radius: 5px; /* 圆角 */
+}
   width: 180px;
   height: 30px;
 }
@@ -313,3 +341,5 @@ button {
   font-weight: bold;
   text-align: center;
 }
+
+
