@@ -42,7 +42,7 @@ body {
   box-sizing: border-box;
   /* 上、右、下、左的内边距分别为 3% */
   padding: 2% 2% 2% 2%;
-  background-color : rgba(70, 130, 180, 0.4)
+  background-color : rgba(70, 130, 180, 0.3)
 }
 
 /* 设置 body 的字体样式，并移除外边距 */
