@@ -35,7 +35,7 @@ body {
   /* 水平居中 */
   margin: 0 auto;
   /* 3 像素宽的半透明绿色边框 */
-  border: 3px solid #00FFFF;
+  border: 3px solid #F0FFFF;
   /* 20 像素的圆角 */
   border-radius: 20px;
   /* 盒模型为 border-box */
@@ -166,7 +166,7 @@ input[type="search"] {
   text-overflow: ellipsis;
   /* 超出部分隐藏 */
   overflow: hidden;
-  color: #00FFFF;
+  color: #2F4F4F;
 }
 
 /* 对 file-attr 类元素的样式设置 */
