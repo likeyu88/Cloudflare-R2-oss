@@ -223,20 +223,27 @@ export default {
   }),
 
   computed: {
+    // 过滤后的文件列表，根据搜索关键词过滤
     filteredFiles() {
       let files = this.files;
       if (this.search) {
-        files = files.filter((file) =>
-          file.key.split("/").pop().includes(this.search)
-        );
+        const searchTerm = this.search.toLowerCase(); // 将搜索关键词转换为小写
+        files = files.filter((file) => {
+          const fileName = file.key.split("/").pop().toLowerCase(); // 将文件名称转换为小写
+          return fileName.includes(searchTerm);
+        });
       }
       return files;
     },
-
+    // 过滤后的文件夹列表，根据搜索关键词过滤
     filteredFolders() {
       let folders = this.folders;
       if (this.search) {
-        folders = folders.filter((folder) => folder.includes(this.search));
+        const searchTerm = this.search.toLowerCase(); // 将搜索关键词转换为小写
+        folders = folders.filter((folder) => {
+          const folderName = folder.toLowerCase(); // 将文件夹名称转换为小写
+          return folderName.includes(searchTerm);
+        });
       }
       return folders;
     },
@@ -522,29 +529,4 @@ export default {
 }
 </style>
 
-document.addEventListener("DOMContentLoaded", function() {
-  const searchBox = document.getElementById("searchBox");
-  const app = document.getElementById("app");
 
-  searchBox.addEventListener("input", function() {
-    const searchTerm = searchBox.value.toLowerCase(); // 将搜索关键词转换为小写
-    const elements = app.children;
-
-    // 遍历 #app 中的元素
-    for (let i = 0; i < elements.length; i++) {
-      const element = elements[i];
-      const elementText = element.textContent.toLowerCase(); // 将元素文本内容转换为小写
-
-      if (searchTerm === "") {
-        element.classList.remove("hidden");
-        element.classList.remove("highlight");
-      } else if (elementText.includes(searchTerm)) {
-        element.classList.remove("hidden");
-        element.classList.add("highlight"); // 高亮显示搜索结果
-      } else {
-        element.classList.add("hidden");
-        element.classList.remove("highlight");
-      }
-    }
-  });
-});
