@@ -21,7 +21,7 @@
       />
     </button>
     <div class="app-bar">
-      <input type="search" v-model="search" aria-label="Search" />
+      <input class="search__input" type="text" name="box" placeholder=" 输入搜索关键词" key="input-2-1-1" style="width: 90%;">
       <div class="menu-button">
         <button class="circle" @click="showMenu = true">
           <svg
