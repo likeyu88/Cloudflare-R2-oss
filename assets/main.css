@@ -113,7 +113,7 @@ input[type="search"] {
   /* 边框圆角为 16 像素 */
   border-radius: 16px;
   /* 宽度为 100% */
-  width: 100%;
+  width: 30%;
   /* 内边距，上下 8 像素，左右 12 像素 */
   padding: 8px 12px;
 }
