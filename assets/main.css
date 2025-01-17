@@ -33,7 +33,7 @@ body {
   /* 高度根据内容自动调整 */
   height: auto;
   /* 水平居中 */
-  margin: 0 auto;
+  margin: 3px auto;
   /* 3 像素宽的半透明绿色边框 */
   border: 3px solid rgba(0, 0, 0, 0);
   /* 20 像素的圆角 */
@@ -41,7 +41,7 @@ body {
   /* 盒模型为 border-box */
   box-sizing: border-box;
   /* 上、右、下、左的内边距分别为 3% */
-  padding: 2% 2% 2% 2%;
+  padding: 1% 2% 1% 2%;
   background-color : rgba(70, 130, 180, 0.2)
 }
 
