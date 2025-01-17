@@ -493,19 +493,12 @@ export default {
   height: 100%;
 }
 
-.app-bar input[type="search"] {
-  margin: 0 20px;
-  background-color: transparent;
-  color: inherit;
-  padding-left: 8px;
-  font-size: 16px;
-  border: none;
-  outline: none;
-}
-
-.app-bar input[type="search"]::placeholder {
-  color: #ccc;
-  content: "搜索";
+.app-bar {
+  position: sticky;
+  top: 0;
+  padding: 8px;
+  background-color: white;
+  display: flex;
 }
 
 .menu-button {
