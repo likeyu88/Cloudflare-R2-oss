@@ -94,7 +94,8 @@ const emit = defineEmits(["update:modelValue", "upload", "createFolder"]);
 .popup-content {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   z-index: 2;
   border-radius: 16px 16px 0 0;
   background-color: white;
@@ -103,6 +104,8 @@ const emit = defineEmits(["update:modelValue", "upload", "createFolder"]);
 .popup .button-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin: 0 auto;
   grid-gap: 8px;
   padding: 8px;
 }
