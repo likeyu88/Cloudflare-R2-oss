@@ -33,7 +33,7 @@ body {
   /* 高度根据内容自动调整 */
   height: auto;
   /* 水平居中 */
-  margin: 3px auto;
+  margin: 6px auto;
   /* 3 像素宽的半透明绿色边框 */
   border: 3px solid rgba(0, 0, 0, 0);
   /* 20 像素的圆角 */
