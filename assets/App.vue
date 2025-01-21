@@ -21,7 +21,7 @@
       />
     </button>
     <div class="app-bar">
-      <input type="search" v-model="search" aria-label="Search" placeholder=" 输入搜索关键词"/>
+      <input type="search" v-model="search" aria-label="Search" placeholder=" 搜索"/>
       <div class="menu-button">
         <button class="circle" @click="showMenu = true">
           <svg
@@ -61,7 +61,7 @@
               alt="Folder"
             />
           </div>
-          <span class="file-name">返回上一级</span>
+          <span class="file-name">返回</span>
         </div>
       </li>
       <li v-for="folder in filteredFolders" :key="folder">
@@ -465,7 +465,7 @@ export default {
         }
         document.title = `${
           this.cwd.replace(/.*\/(?!$)|\//g, "") || ""
-        }  李可喻的网盘`;
+        }  李可喻`;
       },
       immediate: true,
     },
