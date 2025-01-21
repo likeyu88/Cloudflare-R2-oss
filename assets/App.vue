@@ -22,7 +22,7 @@
     </button>
     <div class="app-bar">
     <div class="avatar">
-        <img src="https://d8dced7c.cloudflare-leeky-tuchuang.pages.dev/file/AgACAgUAAyEGAASRyWISAAMwZ49oU7vLOpOCpJuGEzDHwjsyMQYAAqHFMRtXXXlUq9MdAAFT-knGAQADAgADeAADNgQ.jpg" alt="Avatar">
+        <img src="https://d8dced7c.cloudflare-leeky-tuchuang.pages.dev/file/AgACAgUAAyEGAASRyWISAAMwZ49oU7vLOpOCpJuGEzDHwjsyMQYAAqHFMRtXXXlUq9MdAAFT-knGAQADAgADeAADNgQ.jpg" alt="Avatar width="20" height="20">
     </div>
     <input type="search" v-model="search" aria-label="Search" placeholder=" 搜索"/>
     <div class="menu-button">
