@@ -21,9 +21,6 @@
       />
     </button>
     <div class="app-bar">
-      <div class="avatar">
-        <img src="https://d8dced7c.cloudflare-leeky-tuchuang.pages.dev/file/AgACAgUAAyEGAASRyWISAAMjZ3QrZnZ9EkvBNwI77oMtxDLrhrgAAn_EMRvmaKlX8kxXL8tlsT0BAAMCAAN4AAM2BA.png" alt="Avatar style="width: 10px; height: 100%;">
-      </div>
       <input type="search" v-model="search" aria-label="Search" placeholder=" 搜索"/>
       <div class="menu-button">
         <button class="circle" @click="showMenu = true">
