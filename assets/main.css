@@ -317,9 +317,18 @@ button {
   text-align: center;
 }
 
+.app-bar {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    margin-right: 10px;
+}
+
 .avatar img {
-    width: 50%; /* 头像宽度为父元素宽度的50% */
-    height: 50%; /* 头像高度为父元素高度的50% */
+    width: 20px; /* 减小头像的宽度 */
+    height: 20px; /* 减小头像的高度 */
     border-radius: 50%;
 }
 
