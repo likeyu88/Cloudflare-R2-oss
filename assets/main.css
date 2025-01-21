@@ -317,30 +317,9 @@ button {
   text-align: center;
 }
 
-.app-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-}
-
-.avatar {
-    flex: 0 0 auto;
-}
-
 .avatar img {
-    width: 30px;
-    height: 30px;
+    width: 50%; /* 头像宽度为父元素宽度的50% */
+    height: 50%; /* 头像高度为父元素高度的50% */
     border-radius: 50%;
 }
-
-.search - menu - wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.search - menu - wrapper input {
-    margin-right: 10px;
-}
-
 
