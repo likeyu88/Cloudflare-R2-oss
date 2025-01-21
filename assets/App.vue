@@ -23,7 +23,7 @@
     <div class="app-bar">
     <div class="left-content">
         <div class="avatar">
-            <img src="avatar.png" alt="Avatar">
+            <img src="https://d8dced7c.cloudflare-leeky-tuchuang.pages.dev/file/AgACAgUAAyEGAASRyWISAAMjZ3QrZnZ9EkvBNwI77oMtxDLrhrgAAn_EMRvmaKlX8kxXL8tlsT0BAAMCAAN4AAM2BA.png" alt="Avatar">
         </div>
     </div>
     <div class="right-content">
