@@ -21,30 +21,33 @@
       />
     </button>
     <div class="app-bar">
-      <input type="search" v-model="search" aria-label="Search" placeholder=" 搜索"/>
-      <div class="menu-button">
+    <div class="avatar">
+        <img src="avatar.png" alt="Avatar">
+    </div>
+    <input type="search" v-model="search" aria-label="Search" placeholder=" 搜索"/>
+    <div class="menu-button">
         <button class="circle" @click="showMenu = true">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512"
-            width="24"
-            height="24"
-            title="Menu"
-            style="display: block; margin: 4px"
-          >
-            <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-            <path
-              d="M120 256c0 30.9-25.1 56-56 56s-56-25.1-56-56s25.1-56 56-56s56 25.1 56 56zm160 0c0 30.9-25.1 56-56 56s-56-25.1-56-56s25.1-56 56-56s56 25.1 56 56zm104 56c-30.9 0-56-25.1-56-56s25.1-56 56-56s56 25.1 56 56s-25.1 56-56 56z"
-            />
-          </svg>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                width="24"
+                height="24"
+                title="Menu"
+                style="display: block; margin: 4px"
+            >
+                <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                    d="M120 256c0 30.9-25.1 56-56 56s-56-25.1-56-56s25.1-56 56-56s56 25.1 56 56zm160 0c0 30.9-25.1 56-56 56s-56-25.1-56-56s25.1-56 56-56s56 25.1 56 56zm104 56c-30.9 0-56-25.1-56-56s25.1-56 56-56s56 25.1 56 56s-25.1 56-56 56z"
+                />
+            </svg>
         </button>
         <Menu
-          v-model="showMenu"
-          :items="[{ text: '名称A-Z' }, { text: '大小↑' } ,{ text: '大小↓' }, { text: '粘贴' }]"
-          @click="onMenuClick"
+            v-model="showMenu"
+            :items="[{ text: '名称A-Z' }, { text: '大小↑' },{ text: '大小↓' }, { text: '粘贴' }]"
+            @click="onMenuClick"
         />
-      </div>
     </div>
+</div>
     <ul class="file-list">
       <li v-if="cwd !== ''">
         <div
