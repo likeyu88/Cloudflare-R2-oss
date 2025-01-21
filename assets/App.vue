@@ -502,11 +502,37 @@ export default {
 }
 
 .app-bar {
-  position: sticky;
-  top: 0;
-  padding: 8px;
-  background-color: white;
-  display: flex;
+    display: flex;
+    justify-content: space-between; /* 让左右两侧元素分布在两端 */
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+.left-content {
+    display: flex;
+    align-items: center; /* 垂直居中 */
+}
+.avatar img {
+    width: 30px; /* 头像的宽度 */
+    height: 30px; /* 头像的高度 */
+    border-radius: 50%; /* 头像圆形显示 */
+}
+.right-content {
+    display: flex;
+    align-items: center; /* 垂直居中 */
+}
+.menu-button {
+    margin-left: 10px;
+}
+.circle {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.circle svg {
+    fill: #333; /* 设置 SVG 图标的颜色 */
+}
+.circle:hover svg {
+    fill: #666; /* 鼠标悬停时的 SVG 图标颜色 */
 }
 
 .menu-button {
