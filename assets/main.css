@@ -111,7 +111,7 @@ background-color: whitesmoke;
 /* 边框圆角为 16 像素 */  
 border-radius: 16px;  
 /* 宽度为 100% */  
-width: 50%;  
+width: 40%;  
 /* 内边距，上下 8 像素，左右 12 像素 */  
 padding: 8px 12px;
 }
@@ -335,7 +335,6 @@ button {
 }
 .circle {
     border: none;
-    background-color: transparent;
     cursor: pointer;
 }
 .circle svg {
