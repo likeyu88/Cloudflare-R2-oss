@@ -505,7 +505,7 @@ export default {
     display: flex;
     justify-content: space-between; /* 让左右两侧元素分布在两端 */
     padding: 10px;
-    background-color: #f0f0f0;
+    background-color : rgba(70, 130, 180, 0.2);
 }
 .left-content {
     display: flex;
