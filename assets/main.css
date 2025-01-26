@@ -104,7 +104,7 @@ a {
   color: inherit;
 }
 
-input[type="search"] {
+.input[type="search"] {
       /* 背景颜色为白色 */
   background-color: white;
       /* 边框设置为 1 像素的浅灰色实线 */
