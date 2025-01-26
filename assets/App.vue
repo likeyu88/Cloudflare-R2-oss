@@ -522,10 +522,6 @@ export default {
     align-items: center; /* 垂直居中 */
     margin-left: auto;
 }
-.menu-button {
-    margin-left: 10px;
-}
-
 .circle svg {
     fill: #333; /* 设置 SVG 图标的颜色 */
 }
