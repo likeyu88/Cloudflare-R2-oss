@@ -523,11 +523,7 @@ export default {
 .menu-button {
     margin-left: 10px;
 }
-.circle {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
+
 .circle svg {
     fill: #333; /* 设置 SVG 图标的颜色 */
 }
