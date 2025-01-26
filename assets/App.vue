@@ -536,7 +536,7 @@ export default {
 .menu-button {
   display: flex;
   position: relative;
-  margin-left: 4px;
+  margin-left: 1px;
   margin-left: auto; 
 }
 
