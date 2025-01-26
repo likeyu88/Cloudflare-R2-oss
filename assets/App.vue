@@ -513,9 +513,9 @@ export default {
     
 }
 .avatar img {
-    width: 35px; /* 头像的宽度 */
-    height: 35px; /* 头像的高度 */
-    border-radius: 50%; /* 头像圆形显示 */
+    width: 40px; /* 头像的宽度 */
+    height: 40px; /* 头像的高度 */
+    border-radius: 40%; /* 头像圆形显示 */
 }
 .right-content {
     display: flex;
