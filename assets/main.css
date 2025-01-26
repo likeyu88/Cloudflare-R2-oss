@@ -104,19 +104,23 @@ a {
   color: inherit;
 }
 
-/* 对 input 元素中类型为 search 的样式设置 */
 input[type="search"] {
-  /* 背景颜色为浅灰色 */
-  background-color: whitesmoke;
-  /* 无边框 */
-  border: none;
-  /* 边框圆角为 16 像素 */
-  border-radius: 16px;
-  /* 宽度为 100% */
-  width: 30%;
-  /* 内边距，上下 8 像素，左右 12 像素 */
-  padding: 8px 12px;
-  margin-left: auto;
+      /* 背景颜色为白色 */
+  background-color: white;
+      /* 边框设置为 1 像素的浅灰色实线 */
+  border: 1px solid #d1d1d1;
+      /* 边框圆角为 20 像素，使边角更圆润 */
+  border-radius: 20px;
+      /* 宽度为 30% */
+  width: 50%;
+      /* 内边距，上下 10 像素，左右 15 像素 */
+  padding: 10px 15px;
+      /* 字体大小为 16 像素 */
+  font-size: 16px;
+      /* 字体颜色为深灰色 */
+  color: #333;
+      /* 过渡效果，让边框颜色和阴影变化更平滑 */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* 对 file-item 类元素的样式设置 */
