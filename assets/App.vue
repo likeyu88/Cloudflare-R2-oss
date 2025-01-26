@@ -510,15 +510,17 @@ export default {
 .left-content {
     display: flex;
     align-items: center; /* 垂直居中 */
+    
 }
 .avatar img {
-    width: 30px; /* 头像的宽度 */
-    height: 30px; /* 头像的高度 */
+    width: 35px; /* 头像的宽度 */
+    height: 35px; /* 头像的高度 */
     border-radius: 50%; /* 头像圆形显示 */
 }
 .right-content {
     display: flex;
     align-items: center; /* 垂直居中 */
+    margin-left: auto;
 }
 .menu-button {
     margin-left: 10px;
