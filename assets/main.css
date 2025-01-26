@@ -336,9 +336,6 @@ button {
     display: flex;
     align-items: center; /* 垂直居中 */
 }
-.menu-button {
-    margin-left: 10px;
-}
 .circle {
     border: none;
     background-color: transparent;
