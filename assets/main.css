@@ -116,6 +116,7 @@ input[type="search"] {
   width: 30%;
   /* 内边距，上下 8 像素，左右 12 像素 */
   padding: 8px 12px;
+  margin-left: auto;
 }
 
 /* 对 file-item 类元素的样式设置 */
