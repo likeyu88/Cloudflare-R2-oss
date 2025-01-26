@@ -521,6 +521,7 @@ export default {
     display: flex;
     align-items: center; /* 垂直居中 */
     margin-left: auto;
+    justify-content: flex-end;
 }
 .circle svg {
     fill: #333; /* 设置 SVG 图标的颜色 */
