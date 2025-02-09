@@ -82,7 +82,7 @@
                 x = event.clientX - f / 2 - 30, // 横坐标
                 y = event.clientY - f, // 纵坐标
                 c = randomColor(), // 随机颜色
-                a = 1, // 透明度
+                a = 2, // 透明度
                 s = 1.2; // 放大缩小
 
             var timer = setInterval(function () { //添加定时器
@@ -106,6 +106,22 @@
                 .random() * 255)) + ")";
         }
     }());
+    </script>
+    <script>
+        // 获取所有具有 file-list 类的元素
+        const fileLists = document.querySelectorAll('.file-list');
+
+        // 遍历每个 file-list 元素
+        fileLists.forEach((fileList) => {
+            // 获取元素内容的实际高度
+            const contentHeight = fileList.scrollHeight;
+
+            // 如果内容高度超过 200px
+            if (contentHeight > 200) {
+                // 给元素添加 flex-layout 类，应用 Flex 布局样式
+                fileList.classList.add('flex-layout');
+            }
+        });
     </script>
     </div>
   </div>
