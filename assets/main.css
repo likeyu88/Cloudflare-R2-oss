@@ -76,14 +76,13 @@ ul {
 }
 
 /* 对类名为 file-list 的元素进行布局设置 */
-.file-list {
+ .file-list {
             height: 400px;
             overflow: hidden;
             box-sizing: border-box;
         }
-
         /* 内容超过 200px 时应用的 Flex 布局样式 */
-        .file-list.flex-layout {
+        .file-list:has(:nth-child(7)) {
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
@@ -91,8 +90,6 @@ ul {
             box-sizing: border-box;
         }
 
-
- 
 /* 对 file-list 的直接子元素 li 进行样式设置 */
 .file-list > li {
   /* 宽度为父元素的 100% */
