@@ -77,14 +77,24 @@ ul {
 
 /* 对类名为 file-list 的元素进行布局设置 */
 .file-list {
-  /* 使用 Flex 布局 */
-  display: flex;
-  /* 允许元素换行 */
-  flex-wrap: wrap;
-  /* 主轴方向为垂直方向 */
-  flex-direction: column;
-}
+      /* 使用 Flex 布局 */
+      display: flex;
+      /* 允许元素换行 */
+      /* 主轴方向为垂直方向 */
+      flex-direction: column;
+      /* 设置最大高度 */
+      max-height: 200px;
+      /* 当内容超出最大高度时显示滚动条 */
+      overflow: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
 
+    .file-item {
+      padding: 5px;
+      margin: 2px;
+      background-color: #f0f0f0;
+    }
 /* 对 file-list 的直接子元素 li 进行样式设置 */
 .file-list > li {
   /* 宽度为父元素的 100% */
