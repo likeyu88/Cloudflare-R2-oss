@@ -108,22 +108,7 @@
     }());
     </script>
         
-    <script>
-        // 获取所有具有 file-list 类的元素
-        const fileLists = document.querySelectorAll('.file-list');
 
-        // 遍历每个 file-list 元素
-        fileLists.forEach((fileList) => {
-            // 获取元素内容的实际高度
-            const contentHeight = fileList.scrollHeight;
-
-            // 如果内容高度超过 200px
-            if (contentHeight > 400) {
-                // 给元素添加 flex-layout 类，应用 Flex 布局样式
-                fileList.classList.add('flex-layout');
-            }
-        });
-    </script>
     </div>
   </div>
 </body>
