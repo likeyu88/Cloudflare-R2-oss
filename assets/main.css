@@ -90,18 +90,7 @@ ul {
             box-sizing: border-box;
         }
 
-/* 对 file-list 的直接子元素 li 进行样式设置 */
-.file-list > li {
-  /* 宽度为父元素的 100% */
-  width: 100%;
-}
 
-/* 当屏幕宽度小于等于 768px 时，对 file-list 的直接子元素 li 的样式设置 */
-@media only screen and (max-width: 768px) {
- .file-list > li {
-    width: 100%;
-  }
-}
 
 /* 对 a 元素的样式设置，去除下划线并继承父元素的颜色 */
 a {
